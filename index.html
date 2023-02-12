@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinas shop</title>
+    <link rel="stylesheet" href="tinasshop.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+    <header>
+        <p></p>
+    </header>
+
+    <button id="menyKnapp">MENY </button>
+    <section class=Menybbb>
+        <nav id=Meny class="hide">
+            <div> <a href="admin.html">Admin</a></div>
+            <div id="allaprodukterhidden"  onclick="openNav2()" >ALLA PRODUKTER </div>
+            <div> <a href="index.html">Shop</a></div>
+        </nav>
+    </section>
+<br><br>
+
+
+    <article class = "testielement">   
+        <button id="ytterligareknapp" onclick="visaorderformular()">LOGGA IN / LOGGA UT</button>
+        <section class="rubrik">
+            <H1><i> SHOPPEN </i></H1>
+        </section>
+        <section id = "shopping"> 
+            <span id="shoppingbutton" style="font-size:30px;" onclick="openNav()">
+              <i class="material-icons">add_shopping_cart</i> </span>
+              <p id="antalprodukter"></p>   
+              </section>       
+    </article>
+    <h3 id="inlogningsnamn" >Logga in och köp :-)</h3>  
+
+    
+
+
+   <form id="orderformular" class="hide"> 
+
+    <fieldset>
+        <legend>Personlig information: </legend>
+
+        <input type="text" name="username" id="username" placeholder="Ange ditt namn" required>
+        <br><br>
+        <input type="text" name="address" id="address" placeholder="Ange din adress" required>
+        <br><br>
+        <input type="text" name="postalno" id="postalno" placeholder="Ange postnr" required>
+        <br><br>
+        <input type="text" name="city" id="city" placeholder="Ange stad" required>
+        <br><br>
+        <input type="text" name="email" id="email" placeholder="Ange din email" required>
+        <br><br>
+        <!--dropdown   customer-status-->
+        <label for="freightterms">Leveransalternativ:</label>
+        <br>
+        <select name="freight-terms" id="freightterms" required>
+            <option value="" disabled selected>Ange fraktalternativ</option>
+            <option value="Postbox">Postbox</option>
+            <option value="Hemleverans">Hemleverans</option>
+        </select>
+        <br><br>
+        <input type="button" value="LOGGA IN" id="loginbutton">
+    </fieldset>
+    <br><br><br>
+    <button id="clear">LOGGA UT</button>
+</form>
+
+
+            <b><i> </i></b><br><br>
+
+<article class = "productsdisplaypic2">
+    <figure>
+        <img class = productsdisplays2 id="showJewellerybutton" onclick="visaSmycken()" src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="smycken" width="100" height="100"  style='border-radius: 30px'>
+        <figcaption>
+            <b><i><br>SMYCKEN </i></b>
+        </figcaption>
+    </figure>
+    <figure>
+        <img class = productsdisplays2 id="showElectronicsbutton" onclick="visaElectronics()" src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" alt="electronic" width="100" height="90"  style='border-radius: 30px'>
+        <figcaption>
+            <b><i><br>ELEKTRONIK </i></b>
+        </figcaption>
+    </figure>
+    <figure>
+        <img class = productsdisplays2 id="showMen" onclick="visaMen()" src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="men" width="100" height="90"  style='border-radius: 30px'>
+        <figcaption>
+            <b><i><br>KLÄDER MÄN </i></b>
+        </figcaption>
+    </figure>
+    <figure>
+        <img class = productsdisplays2 id="showWom" onclick="visaWom()" src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="wom" width="100" height="90"  style='border-radius: 30px'>
+        <figcaption>
+            <b><i><br>KLÄDER KVINNOR </i></b>
+        </figcaption>
+    </figure>
+</article>
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            
+                <h3 id="h3kundvagn"><i><b>KUNDVAGN</b></i></h3>
+                <br><br>
+                <p id="kundvagnid">lägga i kundvagn</p>
+                <br><br><br>
+        
+                
+                <input type="button" value="KÖP" id="handlaallaprodukter">
+                <br><br>
+                <br><br><br>
+        </div>
+      </div>
+  
+
+
+<br><br>
+
+    <article id = "produkter" class = "hide">
+        <p id="smyckensec"></p>
+    </article>
+
+    <article id = "produkterE" class = "hide">
+        <p id="electronik"></p>
+    </article>
+
+    <article id = "produkterMen" class = "hide">
+        <p id="menclothes"></p>
+    </article>
+
+    <article id = "produkterWom" class = "hide">
+        <p id="womclothes"></p>
+    </article>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    
+
+
+
+   
+    <div id="myNav2" class="overlay2">   <!--TESTAR GÖMMA ALLA PRODUKTER!!!!!-->
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+        <div class="overlay-content2">          
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>image</th>
+                <th>description</th>
+                <th>category</th>
+                <th>price</th>
+                <th>rating count</th>
+                <th>rating rate</th>
+
+                <th>Lägg i varukorg</th>
+
+            </tr>
+        </thead>
+        <tbody id="data-output2">
+        </tbody>
+    </table>
+                <br><br>
+                <br><br><br>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      
+
+
+    <footer class="footer">
+        <br><br>
+        <a href="#" id="fixedbutton">Till toppen</a>
+        <p id="Copyright"><i>Copyright 2022</i></p>
+        <p id="emailadress"><i>shoppen@me.com</i></p>
+
+    </footer>
+
+
+
+
+
+
+    <script src="tinasshop.js"></script>
+</body>
+
+</html>

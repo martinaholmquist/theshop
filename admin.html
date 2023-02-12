@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="tinasshop.css">
+
+</head>
+<body>
+
+    <header>
+        <p></p>
+    </header>
+
+    <button id="menyKnapp">MENY </button>
+    <section class=Menybbb>
+        <nav id=Meny class="hide">
+            <div> <a href="admin.html">Admin</a></div>
+            <div> <a href="index.html">Shop</a></div>
+        </nav>
+    </section>
+
+
+    <section class="rubrik">
+        <H1><i> SHOPPEN </i></H1>
+    </section>
+
+
+    
+    <form id="justeraformular" >  <!--ÄNDRA användare-->
+
+        <fieldset> 
+            <legend>Fyll i nedan för att ändra i en order: </legend>
+
+        <input type="text" name="username"  id="usernamechange"  placeholder="Ange  namn" >
+        <br><br>
+        <input type="text" name="firestoreID"  id="firestoreID"  placeholder="firestoreID" disabled>
+        <br><br>
+        <input type="text" name="productid"  id="productidchange"  placeholder="Ange produkt id" >  
+        <br><br>
+        <input type="text" name="address"  id="addresschange"  placeholder="Ange  adress" >
+        <br><br>
+        <input type="text" name="postalno"  id="postalnochange" placeholder="Ange postnr" >
+        <br><br>
+        <input type="text" name="city"  id="citychange"   placeholder="Ange stad" >
+        <br><br>    
+        <input type="text" name="email" id="emailchange"  placeholder="Ange email" >
+        <br><br> 
+        <!--dropdown   customer-status-->
+        <label for="freighttermschange">Leveransalternativ:</label>
+        <br>
+        <select name="freight-terms" id="freighttermschange" >
+            <option value="" disabled selected>Ange fraktalternativ</option> 
+            <option value="Postbox">Postbox</option>
+            <option value="Hemleverans">Hemleverans</option>
+        </select>
+        <br><br>
+        <button id="uppdatera">Uppdatera ordern tack</button>
+        <br>
+
+    </fieldset>
+
+
+    </form>
+
+
+      
+    <table>
+        <thead>
+           <tr>
+              <th>produktid</th>
+              <th>Namn</th>
+              <th>adress</th>
+              <th>postnr</th>
+              <th>Stad</th>
+              <th>email</th>
+              <th>fraktsätt</th>
+             
+              <th>ändra i order</th>
+              <th>ta bort order</th>
+             
+           </tr>
+        </thead>
+        <tbody id="firestore">
+        </tbody>
+     </table>
+
+
+
+
+
+<footer class="footer">
+    <br><br>
+    <a href="#" id="fixedbutton">Till toppen</a>
+    <p id="Copyright"><i>Copyright 2022</i></p>
+    <p id="emailadress"><i>shoppen@me.com</i></p>
+
+</footer>
+
+
+  
+    <script src="admin.js"></script>
+ 
+
+</body>
+</html>

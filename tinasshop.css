@@ -1,0 +1,362 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+.hide {
+    display: none;
+}
+
+
+.show {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    height: 4%;
+  
+}
+
+#menyKnapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    color: #555;
+    border:  thin solid #3d1e1e;
+    background-color: #e7a5a5;
+    
+    width: 100%;
+    height: 8%;
+    font-size: 30px
+  
+  
+}
+
+nav {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin: 30px;
+    font-size: 30px;
+}
+
+
+#allaprodukterhidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin: 30px;
+    font-size: 30px;
+}
+
+
+
+body{
+	font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+	color: #555;
+    background-color: #e7b3b3;
+    z-index: 1;
+
+    
+}
+
+.rubrik {
+    
+    display: flex;
+    width: 100%;   
+    justify-content: center;
+    font-family: "Papyrus", "Fantasy";
+    font-size: 50px;
+   
+}
+
+
+
+#ytterligareknapp{
+    border: thin solid  #3d1e1e;
+    border-radius: 20%; 
+	background-color: #e7a5a5;
+    margin: 30px;
+	padding: 10px;
+	color: #555;
+    font-size: 20px
+}
+
+
+#inlogningsnamn{
+    margin: 30px;
+}
+
+#justeraknapp{
+    border:  thin solid #3d1e1e;
+	background-color: #e97575;
+	padding: 10px;
+	margin: 30px;
+	color: #555;
+}
+
+form{
+	width:  30%;
+	background-color: #e97575;
+    justify-content: space-evenly; 
+    align-items: center;  
+    flex-direction: column; 
+	padding: 20px;
+	margin: 30px;
+	
+}
+
+#andringsformular {
+	background-color: #e97575;
+    justify-content: space-evenly; 
+    align-items: center;  
+    flex-direction: column; 
+	padding: 20px;
+	width: 30%;
+	margin: 30px;
+}
+
+
+
+
+#shopping{  
+    border: thin solid  #3d1e1e;
+    border-radius: 20%;
+	background-color: #e7a5a5;
+	padding: 10px;
+	margin: 30px;
+	color: #555;
+    width: 2%;
+    font-size: 20px;
+}
+
+
+
+
+.testielement{
+    
+    width: 100%;
+    height: 10%;
+   display: flex;  
+   align-items: center; 
+   justify-content: space-around; 
+}
+
+
+
+#produkter {
+    background-color: #e7b3b3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-inline-start: 5%;
+    padding-inline-end: 45%;
+    
+}
+
+
+/*ALLA PRODUKTER*/
+
+table{
+	width:  30%;
+	margin: 30px;
+}
+
+table th{
+   
+	padding: 10px;
+	background-color: #e97575;
+	border:  thin solid #3d1e1e;
+}
+
+table td{
+	padding: 10px;
+	border:  thin solid #e97575;
+	width: 10%;
+	text-align: center;
+	background-color: #fff;
+}
+
+
+
+/*overlay*/
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 0%; 
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:  #e97575;
+    background-color:  #e97575;
+    overflow-y: scroll;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+
+
+
+/*overlay alla produkter*/
+
+  .overlay2 {
+    height: 0%;  
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:  #e97575;
+    background-color:  #e97575;
+    overflow-y: scroll;
+    transition: 0.5s;
+  }
+  
+  .overlay-content2 {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /*
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }}*/
+  
+  .overlay2 .closebtn2 {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+
+
+.productsdisplaypic2{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: space-around; 
+    padding: 10px;
+   
+}
+
+#showJewellerybutton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+}
+#showElectronicsbutton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+}
+#showMen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+}
+#showWom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  
+}
+
+
+#fixedbutton {
+    position: fixed;
+    z-index: 3;
+    background-color: #e7a5a5;
+    color: #1C2705;
+    font-family: var(--typsnitt3);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    bottom: 2%;
+    left: 75%;
+}
+
+footer {
+    width: 80%;
+    height: 12%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    color: #1C2705;
+    font-family: var(--typsnitt3);
+}
+
+
+
+
