@@ -107,6 +107,11 @@ function changeOrderwithinput() {
     const updatedfreightchange = freightchangeEL.value; 
     const updatedproductID = productIDEL.value; 
     const updatedfirestoreID = firestoreIDEL.value;
+
+    if(!updatednamechange || !updatedaddresschange || !updatedostalchange || !updatedcitychange || !updatedmailchange ||!updatedfreightchange){
+        alert("Vänligen fyll i alla fält");
+        return;
+    }
     
 
     var arr = [updatedproductID];
